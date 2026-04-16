@@ -1,0 +1,10 @@
+langchain
+langchain-openai
+dotenv
+langgraph
+langchain-community
+faiss-cpu 
+openpyxl
+yfinance
+TA-Lib
+streamlit
