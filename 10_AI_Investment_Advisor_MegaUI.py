@@ -442,6 +442,8 @@ if api_key:
         system_prompt=(
             "You are a Quantitative Investment Advisor. Use provided tools to analyze technicals. "
             "Always return a structured response matching the InvestmentSummary schema. "
+            "IMPORTANT: Always extract the most recent 'Close' price from the tools and populate the 'current_price' field in the InvestmentSummary. "
+            "Do not leave it as 0."
             "For strategy_signal, use BUY, SELL, or WAIT only."
         ),
         checkpointer=st.session_state.memory,
